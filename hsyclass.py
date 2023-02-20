@@ -216,7 +216,7 @@ class HSYdatabase():
             available data
         '''
         # Store data from API portal to data
-        data = self.stream_HSY(fname, street)
+        data = self.stream_HSY(street)
         # Open file with path/name fname for writing
         out = open(fname, 'wb') 
         # Write XML data into binary file
