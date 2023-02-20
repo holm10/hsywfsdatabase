@@ -168,7 +168,7 @@ class HSYdatabase():
         # Check if written data should be saved to object
         if read is True:
             # If yes, read data into properties dictionary
-            self.create_fromfile(fname):
+            self.create_fromfile(fname)
 
     def stream_HSY(self, street=None):
         ''' Returns string with street data, dump if street is None 
@@ -216,7 +216,7 @@ class HSYdatabase():
             available data
         '''
         # Store data from API portal to data
-        data = self.stream_HSYdata(fname, street)
+        data = self.stream_HSY(fname, street)
         # Open file with path/name fname for writing
         out = open(fname, 'wb') 
         # Write XML data into binary file
