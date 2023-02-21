@@ -220,7 +220,7 @@ class HSYdatabase():
         # Open file with path/name fname for writing
         out = open(fname, 'wb') 
         # Write XML data into binary file
-        out.write(data) 
+        out.write(str.encode(data))
         # Close the files
         out.close()
 
